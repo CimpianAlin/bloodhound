@@ -6,8 +6,12 @@ module.exports = {
     library: 'Bloodhound'
   },
   module: {
-    loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'}
+    rules: [
+      {
+        test: /\.js$/, 
+        exclude: /node_modules/, 
+        loader: 'babel-loader'
+      }
     ]
   },
   devtool: "source-map"
